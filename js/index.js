@@ -34,36 +34,42 @@ function validation(){
   {
     text = "Name cannot be empty.";
     noName.textContent = text;
+    placement.textContent = '';
   }
   else if(userName.Value != '')
   {
     noName.textContent = '';
+    placement.textContent = '';
   }
 
   if(userEmail.value == "")
   {
     text = "Email cannot be empty.";
     noMail.textContent = text;
+    placement.textContent = '';
   }
   else if(userEmail.Value != '')
   {
     noMail.textContent = '';
+    placement.textContent = '';
   }
 
   if(userInterest.value == "" )
   {
     text = "Select an option listed.";
     noSelect.textContent = text;
+    placement.textContent = '';
   }
   else if(userInterest.Value != '')
   {
     noSelect.textContent = '';
+    placement.textContent = '';
   }
 
   if(userName.value != '' && userEmail.value != '' && userInterest.value != '')
   {
-    text = "Submitted, ";
-    placement.textContent = text + userName.value;
+    text = "FORM SUBMITTED";
+    placement.textContent = text;
     userName.value = '';
     userEmail.value = '';
     userInterest.value = '';
