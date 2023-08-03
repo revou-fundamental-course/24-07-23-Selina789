@@ -61,22 +61,25 @@
             <div class="back-second">
               <p class="text-title"> Contact Us </p>
               <p class="reply-text"> Reply will be sent within a working day </p>
-              <p class="text-inside" for="name"> Your name : </p>
-              <input type="text" placeholder="First and last name" id="name"> 
-  
-              <p class="text-inside" for="email"> Email Address </p>
-              <input type="email" placeholder="@gmail.com" id="email">
-  
-              <p class="text-inside" for="interest"> Places you're interested in? </p>
               <form>
-                <select id="interest">
-                  <option selected disabled hidden value="" class="replacer"> Choose from </option>
-                  <option value="places"> Asia </option>
-                  <option value="must"> America </option>
-                  <option value="funds"> Europe </option>
-                  <option value="questions"> Other? </option>
-                </select>
-              </form>
+                <p class="text-inside" for="name"> Your name : </p>
+                <input type="text" placeholder="First and last name" id="name">
+                <p class="nothing" id="noname"></p> 
+    
+                <p class="text-inside" for="email"> Email Address </p>
+                <input type="email" placeholder="@gmail.com" id="email">
+                <p class="nothing" id="nomail"></p>
+    
+                <p class="text-inside" for="interest"> Places you're interested in? </p>
+                  <select id="interest">
+                    <option selected disabled hidden value="" class="replacer"> Choose from </option>
+                    <option value="places"> Asia </option>
+                    <option value="must"> America </option>
+                    <option value="funds"> Europe </option>
+                    <option value="questions"> Other? </option>
+                  </select>
+                  <p class="nothing" id="noselect"></p>
+                </form>
 
               <input type="submit" class="send-btn" id="submitButton">
               <p id="alerting" class="text-pop"></p>

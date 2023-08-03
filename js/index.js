@@ -22,20 +22,50 @@ const userInterest = document.getElementById("interest");
 const submitButton = document.getElementById("submitButton");
 const placement = document.getElementById("alerting");
 
+const noName = document.getElementById("noname");
+const noMail = document.getElementById("nomail");
+const noSelect = document.getElementById("noselect");
+
 submitButton.addEventListener("click",
 function validation(){
   event.preventDefault();
   let text;
-  if(userName.value == "" || userEmail.value == "" || userInterest.value == "" )
+  if(userName.value == "")
   {
-    text = "Please fill everything.";
-    placement.textContent = text;
+    text = "Name cannot be empty.";
+    noName.textContent = text;
+  }
+  else if(userName.Value != '')
+  {
+    noName.textContent = '';
   }
 
-  else
+  if(userEmail.value == "")
   {
-    text = "Thank you, ";
-    placement.textContent = text + userName.value
+    text = "Email cannot be empty.";
+    noMail.textContent = text;
+  }
+  else if(userEmail.Value != '')
+  {
+    noMail.textContent = '';
   }
 
+  if(userInterest.value == "" )
+  {
+    text = "Select an option listed.";
+    noSelect.textContent = text;
+  }
+  else if(userInterest.Value != '')
+  {
+    noSelect.textContent = '';
+  }
+
+  if(userName.value != '' && userEmail.value != '' && userInterest.value != '')
+  {
+    text = "Submitted, ";
+    placement.textContent = text + userName.value;
+    userName.value = '';
+    userEmail.value = '';
+    userInterest.value = '';
+  }
 })

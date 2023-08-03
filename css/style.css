@@ -200,6 +200,10 @@ select{
   font-weight: bold;
 }
 
+.nothing{
+  margin: 0;
+}
+
 /* benefits */
 .benefits-part{
   margin: auto;
