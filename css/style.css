@@ -1,4 +1,5 @@
 html, body{
+  scroll-behavior: smooth;
   margin: 0;
   width: 100%;
   font-family: Poppins;
@@ -7,7 +8,10 @@ html, body{
 /* Page 1 - header */
 a{
   cursor: pointer;
+  text-decoration: none;
+  color: black;
 }
+
 .page-1-header{
   display: flex;
   flex-direction: row;
@@ -202,6 +206,7 @@ select{
 
 .nothing{
   margin: 0;
+  color: red;
 }
 
 /* benefits */
