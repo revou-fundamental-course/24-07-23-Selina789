@@ -131,6 +131,7 @@ td{
 .second-part{
   display: flex;
   flex-direction: row;
+  box-sizing: border-box;
 }
 
 .back-second{
